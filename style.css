@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Mono:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    background-image:url(assets/firmas.png) ;
+}
+
+header {
+    text-align: center;
+    max-width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+h2{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+span{
+    -webkit-text-stroke: 0.1px black;
+    color: #c77dff;
+    font-size: 1.6em;
+}
+
+main {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    margin: 30px 30px;
+}
+
+.calculadora{
+    display: flex;
+    justify-content: space-around;
+}
+
+.saludo{
+    max-width: 240px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bababa;  
+    font-size: 1.2em;
+}
+
+.pantalla {
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    height: 300px;
+    width: 500px;
+    margin: 0 30px 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bababa;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 7em;
+}
+
+.btnC{
+    width: 500px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bababa;
+    background-color: #FFE135;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+}
+
+.btnC:hover{-webkit-transform:scale(1.15)}
+
+.keys {
+    width: 350px;
+}
+
+.btn,
+.operator {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bababa;
+    background-color: #FFE135;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+}
+
+.btn:hover{-webkit-transform:scale(1.15);}
+.operator:hover{-webkit-transform:scale(1.15);}
+
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+
+
+@media (max-width:969px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .saludo{
+
+        margin-top: 30px;
+    }
+
+    h2{
+        margin-top: 30px;
+    }
+
+    .calculadora{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pantalla{
+        align-items: center;
+    }
+
+    .screen {
+        height: 100px;
+        width: 80%;
+        margin: 30px 10px 30px 10px;
+        font-size: 4em;
+    }
+
+    .btnC{
+        width: 80%;
+    }
+
+    .keys {
+        width: 311px;
+        margin-top: 30px;
+    }
+
+  
+}

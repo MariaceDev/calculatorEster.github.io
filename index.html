@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+      <title>Ester</title>            
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="keywords" content="calculadora"/>
+      <meta name="description" content="Regalo de Manuela de una calculadora online para la seño Pilar"/>
+      <meta name="author" content="MariaCéDev"/>
+      <link rel="shortcut icon" type="image/png" href="assets/shorticon.png"/>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header>
+        <h2>La calculadora de la seño <span>Ester</span></h2>
+      </header>
+
+        <main>
+          
+          <section class="saludo">
+            <p>
+              ¡Hola seño Ester!</br>
+              Bienvenida a tu calculadora personal.</br>
+              Tus cálculos hoy serán perfectos &#128516;
+            </p>
+          </section>
+          <section class="calculadora">
+            <section class="pantalla">
+              <input type="text" id="result" class="screen" />
+              <input type="button" value="Borrar" onclick="clearScreen()" class="btnC" />
+            </section>
+            <section class="numeros">
+              <div class="keys">
+                <input type="button" value="7" class="btn" onclick="display('7')" />
+                <input type="button" value="8" class="btn" onclick="display('8')" />
+                <input type="button" value="9" class="btn" onclick="display('9')" />
+    
+                <input type="button" value="/" class="operator" onclick="display('/')" />
+                <input type="button" value="4" class="btn" onclick="display('4')" />
+                <input type="button" value="5" class="btn" onclick="display('5')" />
+                <input type="button" value="6" class="btn" onclick="display('6')" />
+    
+                <input type="button" value="*" class="operator" onclick="display('*')" />
+                <input type="button" value="1" class="btn" onclick="display('1')" />
+                <input type="button" value="2" class="btn" onclick="display('2')" />
+                <input type="button" value="3" class="btn" onclick="display('3')" />
+    
+                <input type="button" value="-" class="operator" onclick="display('-')" />
+                <input type="button" value="0" class="btn" onclick="display('0')" />
+    
+                <input type="button" value="." class="operator" onclick="display('.')" />
+                <input type="button" value="=" class="btn" onclick="solve()" />
+                <input type="button" value="+" class="operator" onclick="display('+')" />
+              </div>
+            </section> 
+
+          </section>
+          
+         </main>
+
+         <footer>
+
+          <h4>
+            Te queremos seño, de parte de:<br>
+             💜 Dani -Manuela - Naím - Sophy - Sofía - Ibrahím 💜
+          </h4>
+
+      
+         </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
+
