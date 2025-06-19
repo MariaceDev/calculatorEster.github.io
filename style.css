@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
-    background-image:url(assets/firmas.png) ;
+    background-image:url(assets/grupofirmas.png) ;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.4em;
-    margin-top: 20px;
+    margin-block: 50px;
 }
 
 h2{
@@ -118,26 +118,29 @@ main {
 .operator:hover{-webkit-transform:scale(1.15);}
 
 
-footer{
+footer {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin: 30px auto 0 auto;
     background-color: white;
+    padding: 10px;
+    width: fit-content; /* o usa un porcentaje como 80% si quieres un ancho más definido */
+    border-radius: 10px;
 }
+
 
 
 
 @media (max-width:969px){
 
+    header{
+        margin-block: 80px;
+    }
+
     main{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .saludo{
-
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     h2{
@@ -168,6 +171,14 @@ footer{
     .keys {
         width: 311px;
         margin-top: 30px;
+    }
+
+    footer{
+        padding-bottom: 30px;
+    }
+
+    h4{
+        padding-top: 30px;
     }
 
   
